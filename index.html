@@ -298,6 +298,82 @@
 
     .btn-secondary:hover { transform: translateY(-2px); background: rgba(255,255,255,0.9); }
 
+    /* Three business buttons */
+    .hero-biz-buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .btn-biz {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-family: var(--font-hand);
+      font-size: 1.15rem;
+      font-weight: 700;
+      padding: 13px 26px;
+      border-radius: 50px;
+      text-decoration: none;
+      border: 2.5px solid transparent;
+      transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+      backdrop-filter: blur(10px);
+      letter-spacing: 0.01em;
+    }
+
+    .btn-biz:hover { transform: translateY(-3px); }
+
+    .btn-biz-food {
+      background: rgba(232, 136, 58, 0.15);
+      color: #7A3800;
+      border-color: rgba(232, 136, 58, 0.5);
+      box-shadow: 0 4px 20px rgba(232,136,58,0.2);
+    }
+    .btn-biz-food:hover { background: rgba(232, 136, 58, 0.25); box-shadow: 0 8px 28px rgba(232,136,58,0.3); }
+
+    .btn-biz-pet {
+      background: rgba(139, 90, 43, 0.13);
+      color: #4A2800;
+      border-color: rgba(139, 90, 43, 0.4);
+      box-shadow: 0 4px 20px rgba(139,90,43,0.15);
+    }
+    .btn-biz-pet:hover { background: rgba(139, 90, 43, 0.22); box-shadow: 0 8px 28px rgba(139,90,43,0.25); }
+
+    .btn-biz-child {
+      background: rgba(91, 170, 111, 0.15);
+      color: #1E5C32;
+      border-color: rgba(91, 170, 111, 0.45);
+      box-shadow: 0 4px 20px rgba(91,170,111,0.2);
+    }
+    .btn-biz-child:hover { background: rgba(91, 170, 111, 0.25); box-shadow: 0 8px 28px rgba(91,170,111,0.3); }
+
+    .hero-donate-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-donate {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--navy);
+      color: #fff;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 11px 26px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(26,38,96,0.3);
+    }
+    .btn-donate:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(26,38,96,0.4); }
+
     /* Scrolling bunting banner */
     .hero-bunting {
       position: absolute;
@@ -1044,9 +1120,17 @@
         to heal. Radiant Arc is where community shows up — warm, imperfect, and real.
       </p>
 
-      <div class="hero-buttons">
-        <a href="#pillars" class="btn-primary">Our Work ↓</a>
-        <a href="#contact" class="btn-secondary">Join the Circle</a>
+      <!-- Three business buttons -->
+      <div class="hero-biz-buttons">
+        <a href="#full-plate-market" class="btn-biz btn-biz-food">🍽️ Full Plate Market</a>
+        <a href="#scones-and-bones" class="btn-biz btn-biz-pet">🐾 Scones and Bones</a>
+        <a href="#the-cabbage-patch" class="btn-biz btn-biz-child">🌿 The Cabbage Patch</a>
+      </div>
+
+      <!-- Donate row -->
+      <div class="hero-donate-row">
+        <a href="#support" class="btn-donate">💛 Support Us</a>
+        <a href="#contact" class="btn-secondary" style="padding:10px 24px; font-size:0.95rem;">Join the Circle</a>
       </div>
     </div>
 
@@ -1330,6 +1414,150 @@
       </div>
     </div>
   </section>
+
+  <!-- ===================== THREE BUSINESSES ===================== -->
+  <section id="our-initiatives" style="background:var(--warm-white); padding: 90px 40px;">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:60px;" class="reveal">
+        <span class="section-label">✦ Our Initiatives</span>
+        <h2 class="section-title">Three arms. One heart.</h2>
+        <p style="font-family:var(--font-serif); font-style:italic; color:var(--text-soft); max-width:520px; margin:0 auto; line-height:1.75; font-size:1.02rem;">
+          Each initiative is its own thing — its own name, its own vibe — but they all
+          grow from the same roots. Community, dignity, and showing up.
+        </p>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:60px;">
+
+        <!-- Full Plate Market -->
+        <div id="full-plate-market" class="biz-row reveal" style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
+          <div style="background:#FFF5E8; border-radius:24px; padding:52px 44px; border:2px solid rgba(232,136,58,0.25); box-shadow: 5px 6px 0 rgba(232,136,58,0.12), 0 16px 48px rgba(232,136,58,0.08); position:relative;">
+            <span style="position:absolute; top:-16px; left:28px; background:var(--orange); color:#fff; font-family:var(--font-hand); font-size:0.9rem; padding:5px 16px; border-radius:20px; transform:rotate(-1.5deg); display:inline-block;">Food Access</span>
+            <div style="font-size:3rem; margin-bottom:16px;">🍽️</div>
+            <h3 style="font-family:var(--font-hand); font-size:2.4rem; color:var(--navy); margin-bottom:12px;">Full Plate Market</h3>
+            <p style="font-size:1rem; line-height:1.78; color:var(--text-soft); margin-bottom:24px;">
+              A community market rooted in the belief that access to good food isn't a
+              luxury — it's a foundation. Full Plate Market brings fresh, nourishing food
+              directly to the people who need it most, with zero shame and zero barriers.
+            </p>
+            <a href="#contact" style="display:inline-flex; align-items:center; gap:8px; background:var(--orange); color:#fff; font-family:var(--font-body); font-weight:700; font-size:0.95rem; padding:12px 26px; border-radius:40px; text-decoration:none; transition:transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 18px rgba(232,136,58,0.35);" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''">Get Involved →</a>
+          </div>
+          <div>
+            <p style="font-family:var(--font-hand); font-size:1.9rem; color:var(--navy); line-height:1.4; margin-bottom:18px;">"A full stomach is the first step toward everything else."</p>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:14px;">
+              <li style="display:flex; gap:12px; align-items:flex-start; font-size:0.97rem; color:var(--text-soft); line-height:1.6;"><span style="color:var(--orange); font-size:1.2rem; margin-top:2px;">◆</span> Pop-up produce markets in underserved areas</li>
+              <li style="display:flex; gap:12px; align-items:flex-start; font-size:0.97rem; color:var(--text-soft); line-height:1.6;"><span style="color:var(--orange); font-size:1.2rem; margin-top:2px;">◆</span> Community meals &amp; shared tables</li>
+              <li style="display:flex; gap:12px; align-items:flex-start; font-size:0.97rem; color:var(--text-soft); line-height:1.6;"><span style="color:var(--orange); font-size:1.2rem; margin-top:2px;">◆</span> Pantry partnerships &amp; food drives</li>
+              <li style="display:flex; gap:12px; align-items:flex-start; font-size:0.97rem; color:var(--text-soft); line-height:1.6;"><span style="color:var(--orange); font-size:1.2rem; margin-top:2px;">◆</span> No paperwork. No judgment. Just food.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="height:2px; background:linear-gradient(90deg, transparent, rgba(200,151,58,0.2), transparent);"></div>
+
+        <!-- Scones and Bones -->
+        <div id="scones-and-bones" class="biz-row reveal" style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; direction:rtl;">
+          <div style="background:#FDF4EC; border-radius:24px; padding:52px 44px; border:2px solid rgba(139,90,43,0.2); box-shadow: 5px 6px 0 rgba(139,90,43,0.1), 0 16px 48px rgba(139,90,43,0.07); position:relative; direction:ltr;">
+            <span style="position:absolute; top:-16px; left:28px; background:#8B5A2B; color:#fff; font-family:var(--font-hand); font-size:0.9rem; padding:5px 16px; border-radius:20px; transform:rotate(1.5deg); display:inline-block;">Pet Care</span>
+            <div style="font-size:3rem; margin-bottom:16px;">🐾</div>
+            <h3 style="font-family:var(--font-hand); font-size:2.4rem; color:var(--navy); margin-bottom:12px;">Scones and Bones</h3>
+            <p style="font-size:1rem; line-height:1.78; color:var(--text-soft); margin-bottom:24px;">
+              Because pets are family too. Scones and Bones makes sure that financial hardship
+              never means choosing between caring for yourself and caring for your animal. We
+              bring pet care resources to the community with warmth and whimsy.
+            </p>
+            <a href="#contact" style="display:inline-flex; align-items:center; gap:8px; background:#8B5A2B; color:#fff; font-family:var(--font-body); font-weight:700; font-size:0.95rem; padding:12px 26px; border-radius:40px; text-decoration:none; transition:transform 0.2s; box-shadow: 0 4px 18px rgba(139,90,43,0.3);" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''">Get Involved →</a>
+          </div>
+          <div style="direction:ltr;">
+            <p style="font-family:var(--font-hand); font-size:1.9rem; color:var(--navy); line-height:1.4; margin-bottom:18px;">"Your pet deserves care just as much as you do."</p>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:14px;">
+              <li style="display:flex; gap:12px; align-items:flex-start; font-size:0.97rem; color:var(--text-soft); line-height:1.6;"><span style="color:#8B5A2B; font-size:1.2rem; margin-top:2px;">◆</span> Pet food &amp; supply giveaways</li>
+              <li style="display:flex; gap:12px; align-items:flex-start; font-size:0.97rem; color:var(--text-soft); line-height:1.6;"><span style="color:#8B5A2B; font-size:1.2rem; margin-top:2px;">◆</span> Vet care navigation &amp; low-cost resources</li>
+              <li style="display:flex; gap:12px; align-items:flex-start; font-size:0.97rem; color:var(--text-soft); line-height:1.6;"><span style="color:#8B5A2B; font-size:1.2rem; margin-top:2px;">◆</span> Foster &amp; rescue support connections</li>
+              <li style="display:flex; gap:12px; align-items:flex-start; font-size:0.97rem; color:var(--text-soft); line-height:1.6;"><span style="color:#8B5A2B; font-size:1.2rem; margin-top:2px;">◆</span> Scones &amp; treats at every pop-up 🐕</li>
+            </ul>
+          </div>
+        </div>
+
+        <div style="height:2px; background:linear-gradient(90deg, transparent, rgba(200,151,58,0.2), transparent);"></div>
+
+        <!-- The Cabbage Patch -->
+        <div id="the-cabbage-patch" class="biz-row reveal" style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
+          <div style="background:#F0FAF2; border-radius:24px; padding:52px 44px; border:2px solid rgba(91,170,111,0.25); box-shadow: 5px 6px 0 rgba(91,170,111,0.12), 0 16px 48px rgba(91,170,111,0.08); position:relative;">
+            <span style="position:absolute; top:-16px; left:28px; background:var(--green); color:#fff; font-family:var(--font-hand); font-size:0.9rem; padding:5px 16px; border-radius:20px; transform:rotate(-1deg); display:inline-block;">Childcare</span>
+            <div style="font-size:3rem; margin-bottom:16px;">🌿</div>
+            <h3 style="font-family:var(--font-hand); font-size:2.4rem; color:var(--navy); margin-bottom:12px;">The Cabbage Patch</h3>
+            <p style="font-size:1rem; line-height:1.78; color:var(--text-soft); margin-bottom:24px;">
+              A gentle, grounding space for children and the families who love them.
+              The Cabbage Patch provides childcare support, resources, and connection —
+              because parents deserve community just as much as their kids do.
+            </p>
+            <a href="#contact" style="display:inline-flex; align-items:center; gap:8px; background:var(--green); color:#fff; font-family:var(--font-body); font-weight:700; font-size:0.95rem; padding:12px 26px; border-radius:40px; text-decoration:none; transition:transform 0.2s; box-shadow: 0 4px 18px rgba(91,170,111,0.35);" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform=''">Get Involved →</a>
+          </div>
+          <div>
+            <p style="font-family:var(--font-hand); font-size:1.9rem; color:var(--navy); line-height:1.4; margin-bottom:18px;">"It takes a village. We're building one."</p>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:14px;">
+              <li style="display:flex; gap:12px; align-items:flex-start; font-size:0.97rem; color:var(--text-soft); line-height:1.6;"><span style="color:var(--green); font-size:1.2rem; margin-top:2px;">◆</span> Childcare resources &amp; referrals</li>
+              <li style="display:flex; gap:12px; align-items:flex-start; font-size:0.97rem; color:var(--text-soft); line-height:1.6;"><span style="color:var(--green); font-size:1.2rem; margin-top:2px;">◆</span> Parent support circles &amp; community</li>
+              <li style="display:flex; gap:12px; align-items:flex-start; font-size:0.97rem; color:var(--text-soft); line-height:1.6;"><span style="color:var(--green); font-size:1.2rem; margin-top:2px;">◆</span> Safe, nurturing play &amp; learning spaces</li>
+              <li style="display:flex; gap:12px; align-items:flex-start; font-size:0.97rem; color:var(--text-soft); line-height:1.6;"><span style="color:var(--green); font-size:1.2rem; margin-top:2px;">◆</span> Every child seen, valued, and welcomed</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="rainbow-divider"></div>
+
+  <!-- ===================== SUPPORT / DONATE ===================== -->
+  <section id="support" style="background:#FFF8EE; padding:90px 40px; text-align:center;">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">✦ Support the Work</span>
+        <h2 class="section-title">Every little bit moves us forward.</h2>
+        <p style="font-family:var(--font-serif); font-style:italic; color:var(--text-soft); max-width:500px; margin:0 auto 52px; line-height:1.75; font-size:1.02rem;">
+          Whether it's a few dollars or a heartfelt read — your support keeps the lights on,
+          the tables full, and the doors open.
+        </p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px; max-width:820px; margin:0 auto;" class="reveal">
+
+        <!-- PayPal -->
+        <a href="https://paypal.me/" target="_blank" style="display:block; background:#fff; border-radius:20px; padding:38px 28px; border:2px solid #E0D4C0; box-shadow:0 4px 24px rgba(120,60,20,0.1); text-decoration:none; color:inherit; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 14px 36px rgba(120,60,20,0.15)'" onmouseout="this.style.transform=''; this.style.boxShadow='0 4px 24px rgba(120,60,20,0.1)'">
+          <div style="font-size:2.2rem; margin-bottom:14px;">💙</div>
+          <h3 style="font-family:var(--font-hand); font-size:1.6rem; color:var(--navy); margin-bottom:8px;">PayPal</h3>
+          <p style="font-size:0.9rem; color:var(--text-soft); line-height:1.6; margin-bottom:18px;">Quick &amp; easy one-time or recurring donation.</p>
+          <span style="display:inline-block; background:#0070BA; color:#fff; font-size:0.85rem; font-weight:700; padding:9px 22px; border-radius:30px;">Donate via PayPal</span>
+        </a>
+
+        <!-- Venmo -->
+        <a href="https://venmo.com/" target="_blank" style="display:block; background:#fff; border-radius:20px; padding:38px 28px; border:2px solid #E0D4C0; box-shadow:0 4px 24px rgba(120,60,20,0.1); text-decoration:none; color:inherit; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 14px 36px rgba(120,60,20,0.15)'" onmouseout="this.style.transform=''; this.style.boxShadow='0 4px 24px rgba(120,60,20,0.1)'">
+          <div style="font-size:2.2rem; margin-bottom:14px;">💚</div>
+          <h3 style="font-family:var(--font-hand); font-size:1.6rem; color:var(--navy); margin-bottom:8px;">Venmo</h3>
+          <p style="font-size:0.9rem; color:var(--text-soft); line-height:1.6; margin-bottom:18px;">Send a little love directly, phone to phone.</p>
+          <span style="display:inline-block; background:#3D95CE; color:#fff; font-size:0.85rem; font-weight:700; padding:9px 22px; border-radius:30px;">Donate via Venmo</span>
+        </a>
+
+        <!-- Buy My Book -->
+        <a href="#" target="_blank" style="display:block; background:#fff; border-radius:20px; padding:38px 28px; border:2px solid #E0D4C0; box-shadow:0 4px 24px rgba(120,60,20,0.1); text-decoration:none; color:inherit; transition:transform 0.25s, box-shadow 0.25s;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 14px 36px rgba(120,60,20,0.15)'" onmouseout="this.style.transform=''; this.style.boxShadow='0 4px 24px rgba(120,60,20,0.1)'">
+          <div style="font-size:2.2rem; margin-bottom:14px;">📖</div>
+          <h3 style="font-family:var(--font-hand); font-size:1.6rem; color:var(--navy); margin-bottom:8px;">Buy My Book</h3>
+          <p style="font-size:0.9rem; color:var(--text-soft); line-height:1.6; margin-bottom:18px;">Support the mission and take something meaningful home.</p>
+          <span style="display:inline-block; background:var(--navy); color:#fff; font-size:0.85rem; font-weight:700; padding:9px 22px; border-radius:30px;">Get the Book ✦</span>
+        </a>
+
+      </div>
+
+      <p class="reveal" style="margin-top:36px; font-family:var(--font-serif); font-style:italic; color:var(--text-soft); font-size:0.92rem;">
+        100% of contributions go directly to community programming. Thank you. 🌈
+      </p>
+    </div>
+  </section>
+
+  <div class="rainbow-divider"></div>
 
   <!-- ===================== CONTACT ===================== -->
   <section id="contact">
